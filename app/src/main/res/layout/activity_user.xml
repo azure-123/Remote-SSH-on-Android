@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="用户管理"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/show_usergroup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看所有用户组"
+            />
+
+        <TextView
+            android:id="@+id/user_group_tv"
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="添加用户组:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户组名:   "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/add_group_et"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_group_btn"
+            android:width="20sp"
+            android:shadowColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="删除用户组:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户组名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/del_group_et"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/del_group_btn"
+            android:width="20sp"
+            android:shadowColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"/>
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/show_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看所有用户"
+            />
+
+        <TextView
+            android:id="@+id/user_tv"
+            android:layout_width="407dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="添加用户:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/add_user_et"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="所属用户组:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/add_user_group_et"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户目录:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/add_user_pwd_et"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/add_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="添加"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="修改用户密码:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/change_user_passwd_name"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="新密码:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/new_passwd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/change_user_passwd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="修改" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="修改用户所在用户组:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/change_user_group_name"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="新用户组:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/new_user_group"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/change_user_group_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="修改"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="锁定用户:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/lock_user_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/lock_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="锁定"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="启用用户:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/unlock_user_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/unlock_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="启用"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="删除用户:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/del_user_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/del_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="删除"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="赋予用户管理员权限:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户名:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/root_user_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/root_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确认赋予"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="普通用户修改密码规范:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="密码最短长度:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/min_passwd_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="，密码最少包含"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/min_passwd_D_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="个数字，"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/min_passwd_U_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="个大写字母，"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/min_passwd_L_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="个小写字母，"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/min_passwd_O_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="个其他字符，新密码与旧密码至少"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/min_passwd_di_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="个字符不同，且不能与前"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/min_passwd_R_len"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="次密码相同。"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/passwd_rule_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确认修改"
+            />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="查看用户限制:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/show_user_limit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:text="查看"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/user_limit_tv"
+            android:layout_width="407dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置用户限制:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <RadioGroup
+            android:id="@+id/limit_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/is_user_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户"/>
+            <RadioButton
+                android:id="@+id/is_group_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户组"/>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="用户/用户组名："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/limit_user_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="最大登陆数："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/limit_login"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="可用最大内存："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/limit_as"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="MB"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="可用最大进程数："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/limit_nproc"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="可用最大句柄数："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/limit_nofile"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="每个进程可用最大CPU时间："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/limit_cpu"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="分钟"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/limit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确认"
+            />
+    </LinearLayout>
+</ScrollView>

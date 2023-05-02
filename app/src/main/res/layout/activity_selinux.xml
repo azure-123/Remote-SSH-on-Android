@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SELinux管理"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置SELinux级别:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="选择:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <RadioGroup
+                android:id="@+id/selinux_type"
+                android:layout_width="wrap_content"
+                android:layout_height="55px"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/enforcing_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="enforcing"/>
+                <RadioButton
+                    android:id="@+id/permissive_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="permissive"/>
+                <RadioButton
+                    android:id="@+id/disabled_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="disabled"/>
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/selinux_type_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            />
+        <TextView
+            android:id="@+id/show_firewall_status_tv"
+            android:layout_width="406dp"
+            android:layout_height="60dp"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text="
+SELINUX=enforcing：强制模式，表示所有违反安全策略的行为都将被禁止。\n
+SELINUX=permissive：宽容模式，表示所有违反安全策略的行为不被禁止，但是会在日志中作记录。\n
+SELINUX=disabled：关闭SELINUX，不对行为进行限制。
+"
+            android:textColor="#000000"
+            android:focusable="false"
+            android:textSize="10sp"
+            android:fadeScrollbars="false" />
+
+
+
+    </LinearLayout>
+</ScrollView>

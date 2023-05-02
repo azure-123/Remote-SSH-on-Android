@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="运行状态"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/top_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="top查看各项资源使用情况"
+            />
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ctrl+c"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/top_show_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/ps_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看所有进程"
+            />
+        <TextView
+            android:id="@+id/ps_show_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="停止进程:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="进程pid:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/kill_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/kill_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="确认"
+            />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/df_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看磁盘使用情况"
+            />
+        <TextView
+            android:id="@+id/df_show_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/free_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看内存使用情况"
+            />
+        <TextView
+            android:id="@+id/free_show_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+</ScrollView>

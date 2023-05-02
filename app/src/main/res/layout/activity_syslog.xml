@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="日志管理"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/message_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看最新message日志"
+            />
+        <TextView
+            android:id="@+id/message_log_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/secure_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看最新secure日志"
+            />
+        <TextView
+            android:id="@+id/secure_log_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/cron_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看最新cron日志"
+            />
+
+        <TextView
+            android:id="@+id/cron_log_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/dmesg_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看最新dmesg日志"
+            />
+
+        <TextView
+            android:id="@+id/dmesg_log_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/email_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看最新email日志"
+            />
+
+        <TextView
+            android:id="@+id/email_log_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/login_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看最新登陆日志"
+            />
+
+        <TextView
+            android:id="@+id/login_log_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            android:textStyle="bold|italic" />
+
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置系统日志保存时间:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="保存时间:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/log_save_time"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="周"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/log_save_time_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确认"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置系统日志保存等级:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="日志等级："
+                android:textColor="#000000"
+                android:textSize="15sp" />
+            <RadioGroup
+                android:id="@+id/limit_user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/debug_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="debug"/>
+                <RadioButton
+                    android:id="@+id/info_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="info"/>
+                <RadioButton
+                    android:id="@+id/notice_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="notice"/>
+                <RadioButton
+                    android:id="@+id/warning_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="warning"/>
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/log_save_level_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确认"
+            />
+
+    </LinearLayout>
+</ScrollView>

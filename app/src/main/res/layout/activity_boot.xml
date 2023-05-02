@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="电源管理"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <View  android:layout_height="8px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+
+    <Button
+        android:id="@+id/shutdown_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即关机"
+        />
+    <View  android:layout_height="8px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/shutdown_time_et"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="分钟后关机"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/boot_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"/>
+    <View  android:layout_height="8px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <Button
+        android:id="@+id/cancel_boot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消关机计划" />
+    <View  android:layout_height="8px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <Button
+        android:id="@+id/reboot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程重启" />
+    <View  android:layout_height="8px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/boot_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="远程开机" />
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="云主机暂不支持"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/console_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+</LinearLayout>

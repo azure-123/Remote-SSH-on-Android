@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="linux防火墙管理"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/show_firewall_status_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看防火墙状态"
+            />
+
+        <TextView
+            android:id="@+id/show_firewall_status_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/open_firewall_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启防火墙"
+            />
+        <Button
+            android:id="@+id/close_firewall_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭防火墙"
+            />
+        <Button
+            android:id="@+id/restart_firewall_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重启防火墙"
+            />
+        <Button
+            android:id="@+id/enable_firewall_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置开机启动防火墙"
+            />
+        <Button
+            android:id="@+id/disable_firewall_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="禁用开机启动防火墙"
+            />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <Button
+            android:id="@+id/show_firewall_port_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看防火墙开放的端口"
+            />
+        <TextView
+            android:id="@+id/show_firewall_port_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            />
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="开放防火墙端口:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="开放端口:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/firewall_open_port"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/firewall_open_port_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="关闭防火墙端口:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="关闭端口:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/firewall_close_port"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/firewall_close_port_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>

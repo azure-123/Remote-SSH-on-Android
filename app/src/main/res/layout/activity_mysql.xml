@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Mysql管理"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置事务隔离级别:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="选择:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <RadioGroup
+                android:id="@+id/mysql_qua_type"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/read_uncommitted_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="read-uncommitted"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/read_committed_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="read-committed"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/repeatable_read_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="repeatable-read"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/serializable_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="serializable"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/mysql_qua_type_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"
+            />
+        <TextView
+            android:id="@+id/show_firewall_status_tv"
+            android:layout_width="406dp"
+            android:layout_height="60dp"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text="
+read-uncommitted：读未提交，允许脏读；\n
+read-committed：读提交，不允许脏读，但允许不可重复读；\n
+repeatable-read：可重复读，不允许脏读、不可重复读，但允许幻读；\n
+serializable：串行化，以上都不允许。
+"
+            android:textColor="#000000"
+            android:focusable="false"
+            android:textSize="10sp"
+            android:fadeScrollbars="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置查询缓冲大小:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="单个查询使用的缓冲区大小："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/mysql_buffer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Mb"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/mysql_buffer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置日志缓冲区大小:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="日志缓冲区大小："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/mysql_log_buffer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Mb"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/mysql_log_buffer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置线程所打开表最大数量:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="线程所打开表的数量："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/mysql_table_num"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/mysql_table_num_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="设置编码格式:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="设置编码格式:"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/mysql_character"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/mysql_character_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"
+            />
+    </LinearLayout>
+</ScrollView>

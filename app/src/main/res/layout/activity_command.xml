@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="命令行及文件管理"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+
+        <View  android:layout_height="8px"
+            android:layout_width="match_parent"
+            android:background="#66CCFF"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="命令："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/command_et"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/command_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="确定"
+            />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/command_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d7d4"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:fadeScrollbars="false"
+            />
+<!--        <TextView-->
+<!--            android:id="@+id/show_firewall_status_tv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#d3d7d4"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="下载到本地路径默认为/storage/emulated/0/download，文件上传至服务器路径默认为/root"-->
+<!--            android:textColor="#000000"-->
+<!--            android:focusable="false"-->
+<!--            android:textSize="10sp"-->
+<!--            android:fadeScrollbars="false" />-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="服务器文件路径："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/server_et"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="本地文件路径："
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/storage_et"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="上传文件"/>
+        <Button
+            android:id="@+id/download_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="下载文件"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
